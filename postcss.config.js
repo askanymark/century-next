@@ -1,29 +1,4 @@
-const tailwindcss = require('tailwindcss');
-
-const IS_DEVELOPMENT = process.env.NODE_ENV === 'development';
-const plugins = [tailwindcss];
-
-if (!IS_DEVELOPMENT) {
-  /* eslint-disable global-require */
-  const purgecss = require('@fullhuman/postcss-purgecss');
-
-  class TailwindExtractor {
-    static extract(content) {
-      return content.match(/[A-z0-9-:/]+/g) || [];
-    }
-  }
-
-  plugins.push(
-    purgecss({
-      content: ['src/*.html'],
-      extractors: [
-        {
-          extractor: TailwindExtractor,
-          extensions: ['html'],
-        },
-      ],
-    })
-  );
-}
-
-module.exports = { plugins };
+/* eslint-disable global-require */
+module.exports = {
+  plugins: [require('tailwindcss'), require('postcss-nested')],
+};

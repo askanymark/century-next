@@ -25,7 +25,7 @@
     "prettier": "^2.0.5"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^2.2.0",
+    "postcss-nested": "^4.2.1",
     "tailwindcss": "^1.4.6"
   }
 }
