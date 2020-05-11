@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: theme('colors.white');
+  color: theme('colors.green.default');
+  padding: 4rem;
+}
+
+nav {
+  padding-bottom: 8rem;
+}

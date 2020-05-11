@@ -3,26 +3,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="text/css" rel="stylesheet" href="./css/index.pcss" />
+    <link type="text/css" rel="stylesheet" href="./css/style.css" />
     <title>Century Next</title>
   </head>
   <body>
-    <nav>
-      <navbar-item name="INVESTMENT ACTIVITY"></navbar-item>
-      <navbar-item name="PRODUCTION AND DISTRIBUTION"></navbar-item>
-      <navbar-item name="ABOUT US"></navbar-item>
+    <!-- Navbar -->
+    <nav class="flex flex-wrap justify-around">
+      <a class="text-center px-4 py-2 m-2" href="#investment">INVESTMENT ACTIVITY</a>
+      <a class="text-center px-4 py-2 m-2" href="#production">PRODUCTION AND DESTRIBUTION</a>
+      <a class="text-center px-4 py-2 m-2" href="#about">ABOUT US</a>
     </nav>
-    <div class="container mx-auto px-4">
-      <div class="left-column">
-        <img id="logo" src="./images/logo.png" alt="Century Next logo" />
-        <h1>Century Next</h1>
-        <p>
-          Century Next is an investment holding with a broad portfolio of assets across various
-          emerging industries
-        </p>
+
+    <!-- Logo -->
+    <div
+      class="h-screen grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4"
+    >
+      <div class="overflow-hidden">
+        <img class="w-full" src="./images/CN_logo.jpg" alt="Logo" />
+        <div class="px-6 py-4">
+          <p class="text-gray-700 text-base text-center">
+            Century Next is an investment holding with a broad portfolio of assets across various
+            emerging industries
+          </p>
+          <p class="text-gray-700 text-base text-center">[arrow pointing down]</p>
+        </div>
       </div>
-      <div class="right-column"></div>
     </div>
-    <script src="./js/index.js"></script>
+
+    <!-- Investment & prod -->
+    <div class="h-screen grid grid-flow-col grid-cols-3 grid-rows-2 gap-4">
+      <div class="row-span-1 col-span-2">
+        <div id="investment" class="bg-green bg-opacity-75 text-white">
+          <div class="px-6 py-4">
+            <h2 class="font-bold text-xl text-center mb-2">INVESTMENT ACTIVITY</h2>
+            <hr />
+            <p class="text-gray-700 text-base">
+              Century Next has been actively investing in the emerging market of Legal Cannabis -
+              the fastest growing consumer market in the USA, predominantly focusing on the early
+              stage of technology and related companies in the industry.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-span-1 col-span-1">
+        <img src="./images/18860.jpg" alt="CBD" />
+      </div>
+
+      <div class="row-span-1 col-span-2">
+        <div id="production" class="w-full lg:max-w-full lg:flex">
+          <div
+            class="bg-green bg-opacity-75 text-white text-center p-4 flex flex-col justify-between leading-normal"
+          >
+            <div class="mb-8">
+              <div class="text-gray-900 font-bold text-xl mb-2">
+                PRODUCTION AND INVESTMENT
+              </div>
+              <hr />
+              <p class="text-gray-700 text-base">
+                Century Next has partnered with some of the leading wellness and health & beauty
+                brands to assist them in business development and product distribution in China.
+                Century Next has also engaged in production and distribution of various cosmetics
+                and CBD products under the brand NALO
+              </p>
+            </div>
+            <div class="px-6 py-4">
+              <span
+                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                >NALO Website</span
+              >
+            </div>
+            <div class="px-6 py-4">
+              <p class="text-gray-700 text-base">
+                We ensure the products follow the latest local market trends and adapt the marketing
+                strategy accordingly, while our vast partner's network allows for the most optimal
+                and efficient distribution channels for each brand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="h-screen grid grid-cols-3 gap-4">
+      <div class="col-span-2">
+        <div id="about" class="overflow-hidden bg-green-lighter bg-opacity-50">
+          <div class="px-6 py-4">
+            <h2 class="font-bold text-xl text-center mb-2">ABOUT US</h2>
+            <hr />
+            <p class="text-gray-700 text-base text-center">
+              Our story goes back 30 years ago, where founding partners have engaged into petroleum
+              products trading activity, and have eventually established themselves as one of the
+              largest physical traders in the Baltics region, while also diversifying the business
+              activity by involvement in the financial markets. Over time the partners' focus has
+              shifted to private equity and venture capital, which has lead to formation of the
+              Century Next holding.
+            </p>
+          </div>
+          <div class="px-6 py-4">
+            <p class="text-gray-700 text-base text-center">
+              Over the long history of operations the management has established strong personal
+              relations with numerous international partners, including first class banks, brokerage
+              firms, trading companies and others, and now aims to use gained experience and
+              expertise in the private equity, and venture capital markets. Our highly flexible and
+              knowledgeable team takes a pro-active investment approach with a view to achieve
+              maximum results. We hope to establish strong long term relations and are always ready
+              for the next opportunity which may arise.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="h-screen grid grid-cols-4 grid-rows-2 gap-4">
+      <div class="row-span-1 col-span-3">
+        <div class="overflow-hidden">
+          <div class="px-6 py-4">
+            <h2 class="font-bold text-xl mb-2 text-center">CONTACT US</h2>
+            <p class="text-gray-700 text-base text-center">
+              Whether you are at concept phase or have a full-blown business plan, we are here to
+              hear about your project.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-span-1 col-span-3">
+        <div class="grid grid-cols-2">
+          <div class="overflow-hidden">
+            <img class="w-full" src="./images/Path 5.jpg" alt="E-mail" />
+            <div class="px-6 py-4">
+              <h3 class="font-bold text-xl text-center mb-2">+371 2345678</h3>
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <img class="w-full" src="./images/Path 6.jpg" alt="Phone" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl text-center mb-2">email@email.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="flex flex-col">
+      <p class="text-green-lighter">All Rights Reserved</p>
+      <br />
+      <p class="text-green-lighter">2020 Century Next</p>
+    </div>
   </body>
 </html>
