@@ -4,6 +4,8 @@
 
 body {
   background-color: theme('colors.white');
+  background-image: url('../images/background.jpg');
+  background-size: cover;
   color: theme('colors.green.default');
   padding: 4rem;
 }
