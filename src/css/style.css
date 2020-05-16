@@ -7,9 +7,8 @@ body {
   background-image: url('../images/background.jpg');
   background-size: cover;
   color: theme('colors.green.default');
-  padding: 4rem;
 }
 
-nav {
-  padding-bottom: 8rem;
+#vertical-line {
+  transform: rotate(90deg) scale(0.45, 1);
 }
