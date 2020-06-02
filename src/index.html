@@ -8,7 +8,7 @@
   </head>
   <body class="md:m-4 lg:m-8 xl:m-8">
     <!-- Navbar -->
-    <div class="container mx-auto">
+    <div class="container mx-auto md:my-12">
       <nav class="flex flex-wrap justify-around content-center self-center items-center">
         <a class="text-center px-4 py-2 m-2" href="#investment">INVESTMENT ACTIVITY</a>
         <a class="text-center px-4 py-2 m-2" href="#production">PRODUCTION AND DESTRIBUTION</a>
@@ -17,26 +17,31 @@
     </div>
 
     <!-- Logo -->
-    <div class="container h-screen max-w-md">
+    <div class="container h-screen max-w-md lg:m-6">
       <div class="flex flex-col">
-        <img src="./images/CN_logo.jpg" alt="Logo" />
+        <img id="logo" src="./images/CN_logo.jpg" alt="Logo" />
         <p class="px-6 py-4 text-gray-700 text-base text-center">
           Century Next is an investment holding with a broad portfolio of assets across various
           emerging industries
         </p>
-        <img src="./images/Component_1_1.svg" alt="Read more" />
+        <a class="self-center mt-16" href="#investment">
+          <img src="./images/Component_1_1.svg" alt="Read more" />
+        </a>
       </div>
     </div>
 
     <!-- Investment & prod -->
-    <div class="container lg:h-screen xl:h-screen">
+    <div class="container lg:h-screen xl:h-screen lg:mx-20 xl:mx-20">
       <div class="container">
         <div class="flex">
-          <div id="investment" class="max-w-screen-md bg-green bg-opacity-75 text-white">
-            <div class="px-6 py-4">
-              <h2 class="font-bold text-xl text-center mb-2">INVESTMENT ACTIVITY</h2>
-              <hr />
-              <p class="text-gray-700 text-base text-center">
+          <div
+            id="investment"
+            class="max-w-screen-md sm:max-w-screen-md bg-green bg-opacity-75 text-white"
+          >
+            <div class="p-20 sm:p-8 md:p-20">
+              <h2 class="text-4xl text-center mb-2">INVESTMENT ACTIVITY</h2>
+              <img class="mb-8" src="./images/Line_Horizontal.svg" alt="" />
+              <p class="text-gray-700 text-center">
                 Century Next has been actively investing in the emerging market of Legal Cannabis -
                 the fastest growing consumer market in the USA, predominantly focusing on the early
                 stage of technology and related companies in the industry.
@@ -45,98 +50,97 @@
           </div>
         </div>
       </div>
-      <div class="container lg:mt-4 xl:mt-4">
+      <div class="container lg:mt-4 xl:mt-4 lg:mx-20 xl:mx-20">
         <div
           id="production"
           class="flex flex-row content-end flex-wrap sm:flex-wrap md:flex-wrap lg:flex-no-wrap xl:flex-no-wrap"
         >
-          <div class="lg:pl-8 xl:pl-10">
+          <div class="lg:w-3/5 xl:w-3/5">
             <img src="./images/18860.jpg" alt="CBD" />
           </div>
           <div
-            class="bg-green bg-opacity-75 text-white text-center p-4 leading-normal lg:ml-4 xl:ml-4"
+            class="bg-green bg-opacity-75 text-white text-center leading-normal lg:ml-4 xl:ml-4 p-20"
           >
-            <div class="mb-8">
-              <h2 class="text-gray-900 font-bold text-xl mb-2">
-                PRODUCTION AND INVESTMENT
-              </h2>
-              <hr />
-              <p class="text-gray-700 text-base">
-                Century Next has partnered with some of the leading wellness and health & beauty
-                brands to assist them in business development and product distribution in China.
-                Century Next has also engaged in production and distribution of various cosmetics
-                and CBD products under the brand NALO
-              </p>
-            </div>
-            <div class="px-6 py-4">
+            <h2 class="text-4xl text-center mb-2">
+              PRODUCTION AND DISTRIBUTION
+            </h2>
+            <img class="mb-8" src="./images/Line_Horizontal.svg" alt="" />
+            <p class="text-gray-700 text-base">
+              Century Next has partnered with some of the leading wellness and health & beauty
+              brands to assist them in business development and product distribution in China.
+              Century Next has also engaged in production and distribution of various cosmetics and
+              CBD products under the brand NALO
+            </p>
+            <div class="my-4 py-4">
               <span
-                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
-                >NALO Website</span
+                class="lg:px-20 xl:px-20 bg-transparent text-white font-bold py-2 px-4 border rounded-full"
+              >
+                <a href=""> NALO Website</a></span
               >
             </div>
-            <div class="px-6 py-4">
-              <p class="text-gray-700 text-base">
-                We ensure the products follow the latest local market trends and adapt the marketing
-                strategy accordingly, while our vast partner's network allows for the most optimal
-                and efficient distribution channels for each brand.
-              </p>
-            </div>
+            <p class="text-gray-700 text-base">
+              We ensure the products follow the latest local market trends and adapt the marketing
+              strategy accordingly, while our vast partner's network allows for the most optimal and
+              efficient distribution channels for each brand.
+            </p>
           </div>
         </div>
       </div>
     </div>
 
     <!-- About -->
-    <div class="container lg:h-screen xl:h-screen max-w-screen-md">
-      <div id="about" class="gap-4 bg-green-lighter bg-opacity-50">
-        <div class="px-6 py-4">
-          <h2 class="font-bold text-xl text-center mb-2">ABOUT US</h2>
-          <hr />
-          <p class="text-gray-700 text-base text-center">
-            Our story goes back 30 years ago, where founding partners have engaged into petroleum
-            products trading activity, and have eventually established themselves as one of the
-            largest physical traders in the Baltics region, while also diversifying the business
-            activity by involvement in the financial markets. Over time the partners' focus has
-            shifted to private equity and venture capital, which has lead to formation of the
-            Century Next holding.
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          <p class="text-gray-700 text-base text-center">
-            Over the long history of operations the management has established strong personal
-            relations with numerous international partners, including first class banks, brokerage
-            firms, trading companies and others, and now aims to use gained experience and expertise
-            in the private equity, and venture capital markets. Our highly flexible and
-            knowledgeable team takes a pro-active investment approach with a view to achieve maximum
-            results. We hope to establish strong long term relations and are always ready for the
-            next opportunity which may arise.
-          </p>
-        </div>
+    <div class="container lg:h-screen xl:h-screen max-w-screen-md mx-auto">
+      <div id="about" class="gap-4 bg-green-lighter bg-opacity-50 p-20">
+        <h2 class="text-4xl text-center mb-2">ABOUT US</h2>
+        <img class="mb-8" src="./images/Line_Horizontal.svg" alt="" />
+        <p class="text-gray-700 text-base text-center">
+          Our story goes back 30 years ago, where founding partners have engaged into petroleum
+          products trading activity, and have eventually established themselves as one of the
+          largest physical traders in the Baltics region, while also diversifying the business
+          activity by involvement in the financial markets. Over time the partners' focus has
+          shifted to private equity and venture capital, which has lead to formation of the Century
+          Next holding.
+        </p>
+
+        <p class="text-gray-700 text-base text-center mt-6">
+          Over the long history of operations the management has established strong personal
+          relations with numerous international partners, including first class banks, brokerage
+          firms, trading companies and others, and now aims to use gained experience and expertise
+          in the private equity, and venture capital markets. Our highly flexible and knowledgeable
+          team takes a pro-active investment approach with a view to achieve maximum results. We
+          hope to establish strong long term relations and are always ready for the next opportunity
+          which may arise.
+        </p>
       </div>
     </div>
 
     <!-- Contact -->
-    <div class="container lg:h-screen xl:h-screen max-w-screen-md">
-      <div class="flex flex-col gap-4 justify-center">
-        <div class="px-6 py-4">
-          <h2 class="font-bold text-xl mb-2 text-center">CONTACT US</h2>
-          <hr />
+    <div class="container lg:h-screen xl:h-screen max-w-screen-md float-right">
+      <div class="flex flex-col">
+        <div class="p-20">
+          <h2 class="text-4xl mb-2 text-center">CONTACT US</h2>
+          <img class="mb-8" src="./images/Line_Horizontal.svg" alt="" />
           <p class="text-gray-700 text-base text-center">
             Whether you are at concept phase or have a full-blown business plan, we are here to hear
             about your project.
           </p>
         </div>
-        <div class="flex flex-row justify-center bg-green-lighter bg-opacity-50">
-          <div class="flex flex-col">
-            <img class="max-w-sm" src="./images/Path_5.svg" alt="E-mail" />
-            <div class="py-4">
+        <div class="flex flex-row justify-center bg-green-lighter bg-opacity-50 py-8 px-20">
+          <div class="flex flex-col items-center">
+            <img class="w-1/3 self-center" src="./images/Path_5.svg" alt="E-mail" />
+            <div class="mt-8">
               <h3 class="font-bold text-xl text-center mb-2">+371 2345678</h3>
             </div>
           </div>
-          <img class="flex-shrink" id="vertical-line" src="./images/Line_2.svg" alt="Separator" />
+          <img
+            class="flex-shrink"
+            id="vertical-line"
+            src="./images/Line_Vertical.svg"
+            alt="Separator"
+          />
           <div class="flex flex-col">
-            <img class="max-w-sm" src="./images/Path_6.svg" alt="Phone" />
-            <div class="py-4">
+            <img class="w-1/3 self-center mt-4" src="./images/Path_6.svg" alt="Phone" />
+            <div class="mt-8">
               <div class="font-bold text-xl text-center mb-2">email@email.com</div>
             </div>
           </div>
@@ -145,11 +149,11 @@
     </div>
 
     <!-- Footer -->
-    <div class="container">
+    <div class="container float-right">
       <div class="flex flex-col">
-        <p class="text-green-lighter">All Rights Reserved</p>
+        <p class="text-green-dark">All Rights Reserved</p>
         <br />
-        <p class="text-green-lighter">2020 Century Next</p>
+        <p class="text-green-dark">2020 Century Next</p>
       </div>
     </div>
   </body>

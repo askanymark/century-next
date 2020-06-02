@@ -20,3 +20,7 @@ body {
   font-weight: 400;
   src: url('../fonts/Raleway-Regular.ttf') format('truetype');
 }
+
+#logo {
+  width: 64rem;
+}
