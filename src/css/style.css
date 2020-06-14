@@ -11,7 +11,7 @@ body {
 }
 
 #vertical-line {
-  transform: rotate(90deg) scale(0.45, 1);
+  transform: rotate(90deg) scale(0.75, 1) translate(35%, 50%);
 }
 
 @font-face {
