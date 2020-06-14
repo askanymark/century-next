@@ -7,9 +7,29 @@
     <link type="text/css" rel="stylesheet" href="./css/style.css" />
     <title>Century Next</title>
   </head>
-  <body class="lg:m-8 xl:m-8">
+  <body class="lg:mx-8 xl:mx-8">
     <nav>
-      <div class="flex flex-col">
+      <div
+        id="navbar"
+        class="flex bg-green-lighter bg-opacity-50 flex-wrap justify-around content-center self-center items-center lg:py-2 xl:py-2"
+      >
+        <a
+          class="text-center text-2xl text-bold text-green-dark px-4 py-2 m-2 hover:underline"
+          href="#investment"
+          >Investment Activity</a
+        >
+        <a
+          class="text-center text-2xl text-bold text-green-dark px-4 py-2 m-2 hover:underline"
+          href="#production"
+          >Production & Distribution</a
+        >
+        <a
+          class="text-center text-2xl text-bold text-green-dark px-4 py-2 m-2 hover:underline"
+          href="#about"
+          >Abous Us</a
+        >
+      </div>
+      <div id="mobile-navbar" class="flex flex-col">
         <input id="responsive-menu" type="checkbox" />
         <label for="responsive-menu"><span id="menu-icon"></span></label>
         <div id="overlay"></div>
@@ -184,15 +204,31 @@
 
     <script>
       const menuInput = document.getElementById('responsive-menu');
+      const navbar = document.getElementById('navbar');
+      const mobileNavbar = document.getElementById('mobile-navbar');
+      const navbarOriginalStyle = navbar.style;
+      const mobileNavbarOriginalStyle = mobileNavbar.style;
 
-      function closeOverlay() {
-        menuInput.checked = false;
+      function resizeHandler() {
+        if (window.screen.width > 768) {
+          mobileNavbar.style = 'display: none;';
+          navbar.style = navbarOriginalStyle;
+        } else {
+          navbar.style = 'display: none;';
+          mobileNavbar.style = mobileNavbarOriginalStyle;
+        }
       }
+
+      window.onresize = resizeHandler;
 
       const links = document.querySelectorAll('.menu-link');
       links.forEach((link) => {
-        link.onclick = closeOverlay;
+        link.onclick = () => {
+          menuInput.checked = false;
+        };
       });
+
+      resizeHandler();
     </script>
   </body>
 </html>
