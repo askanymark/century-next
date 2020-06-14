@@ -3,41 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link type="text/css" rel="stylesheet" href="./css/reset.css" />
     <link type="text/css" rel="stylesheet" href="./css/style.css" />
     <title>Century Next</title>
   </head>
   <body class="lg:m-8 xl:m-8">
-    <!-- Navbar -->
-    <div class="container mx-auto md:my-12 lg:block xl:block hidden">
-      <nav class="flex flex-wrap justify-around content-center self-center items-center">
-        <a class="text-center px-4 py-2 m-2" href="#investment">INVESTMENT ACTIVITY</a>
-        <a class="text-center px-4 py-2 m-2" href="#production">PRODUCTION AND DESTRIBUTION</a>
-        <a class="text-center px-4 py-2 m-2" href="#about">ABOUT US</a>
-      </nav>
-    </div>
-    <!-- Top Navigation Menu -->
-    <div class="topnav lg:hidden xl:hidden sm:block md:block md:mb-12">
-      <a href="#home" class="">Century Next</a>
-      <!-- Navigation links (hidden by default) -->
-      <div id="myLinks">
-        <a class="text-center px-4 py-2 m-2" href="#investment">INVESTMENT ACTIVITY</a>
-        <a class="text-center px-4 py-2 m-2" href="#production">PRODUCTION AND DESTRIBUTION</a>
-        <a class="text-center px-4 py-2 m-2" href="#about">ABOUT US</a>
+    <nav>
+      <div class="flex flex-col">
+        <input id="responsive-menu" type="checkbox" />
+        <label for="responsive-menu"><span id="menu-icon"></span></label>
+        <div id="overlay"></div>
+        <ul class="justify-between">
+          <li>
+            <a class="menu-link" href="#investment">Investment</a>
+          </li>
+          <li>
+            <a class="menu-link" href="#production">Production & Distribution</a>
+          </li>
+          <li>
+            <a class="menu-link" href="#about">About Us</a>
+          </li>
+        </ul>
       </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+    </nav>
 
     <!-- Logo -->
-    <div id="menu" class="container h-screen max-w-screen lg:w-1/2 xl:w-1/2 md:w-1/2 sm:w-screen">
+    <div class="container mt-48 h-screen max-w-screen lg:w-1/2 xl:w-1/2 md:w-1/2 sm:w-screen">
       <div class="flex flex-col">
         <img id="logo" src="./images/logo.png" alt="Logo" />
         <p class="px-6 py-4 text-gray-700 text-2xl align-text-middle text-center">
@@ -53,12 +44,9 @@
     </div>
 
     <!-- Investment & prod -->
-    <div class="container lg:h-screen xl:h-screen lg:mx-20 xl:mx-20">
+    <div id="investment" class="container lg:h-screen xl:h-screen lg:mx-20 xl:mx-20">
       <div class="flex m-4">
-        <div
-          id="investment"
-          class="lg:w-1/2 sm:w-screen md:w-screen bg-green bg-opacity-75 text-white"
-        >
+        <div class="lg:w-1/2 sm:w-screen md:w-screen bg-green bg-opacity-75 text-white">
           <div class="p-8 md:p-16 lg:p-20 xl:p-20 flex flex-col justify-center">
             <h2 class="text-4xl text-center mb-2">INVESTMENT ACTIVITY</h2>
             <img class="mb-8 mt-4" src="./images/Line_Horizontal.svg" alt="" />
@@ -195,14 +183,16 @@
     </div>
 
     <script>
-      function myFunction() {
-        const x = document.getElementById('myLinks');
-        if (x.style.display === 'block') {
-          x.style.display = 'none';
-        } else {
-          x.style.display = 'block';
-        }
+      const menuInput = document.getElementById('responsive-menu');
+
+      function closeOverlay() {
+        menuInput.checked = false;
       }
+
+      const links = document.querySelectorAll('.menu-link');
+      links.forEach((link) => {
+        link.onclick = closeOverlay;
+      });
     </script>
   </body>
 </html>
