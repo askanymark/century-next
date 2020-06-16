@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" rel="stylesheet" href="./css/reset.css" />
     <link type="text/css" rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
     <title>Century Next</title>
   </head>
   <body class="lg:mx-8 xl:mx-8">
@@ -48,7 +52,10 @@
     </nav>
 
     <!-- Logo -->
-    <div class="container mt-48 h-screen max-w-screen lg:w-1/2 xl:w-1/2 md:w-8/12 sm:w-screen">
+    <div
+      class="container mt-48 h-screen max-w-screen lg:w-1/2 xl:w-1/2 md:w-8/12 sm:w-screen josh-js"
+      data-josh-anim-name="fadeInUp"
+    >
       <div class="flex flex-col">
         <img id="logo" src="./images/logo.png" alt="Logo" />
         <p
@@ -67,7 +74,7 @@
 
     <!-- Investment & prod -->
     <div id="investment" class="container lg:h-screen xl:h-screen lg:mx-20 xl:mx-20">
-      <div class="flex m-4">
+      <div class="flex m-4 josh-js" data-josh-anim-name="fadeInUp">
         <div class="lg:w-1/2 sm:w-screen md:w-screen bg-green bg-opacity-75 text-white">
           <div class="p-8 md:p-16 lg:p-20 xl:p-20 flex flex-col justify-center">
             <h2 class="text-4xl text-center mb-2">INVESTMENT ACTIVITY</h2>
@@ -81,7 +88,7 @@
         </div>
       </div>
 
-      <div class="lg:mt-4 xl:mt-4 lg:mx-20 xl:mx-20">
+      <div class="lg:mt-4 xl:mt-4 lg:mx-20 xl:mx-20 josh-js" data-josh-anim-name="fadeInUp">
         <div
           id="production"
           class="flex flex-row content-end flex-wrap sm:flex-wrap md:flex-wrap lg:flex-no-wrap xl:flex-no-wrap"
@@ -123,7 +130,7 @@
 
     <!-- About -->
     <div>
-      <div id="about" class="float-right">
+      <div id="about" class="float-right josh-js" data-josh-anim-name="fadeInUp">
         <div class="lg:h-screen xl:h-screen max-w-screen-md mx-4 lg:mx-0 xl:mx-0 lg:mt-20 xl:mt-20">
           <div
             class="object-right gap-4 bg-green-lighter bg-opacity-50 p-8 md:p-16 lg:p-20 xl:p-20 flex flex-col justify-center"
@@ -153,7 +160,7 @@
       </div>
 
       <!-- Contact -->
-      <div class="clear-both">
+      <div class="clear-both josh-js" data-josh-anim-name="fadeInUp">
         <div class="container lg:h-screen xl:h-screen max-w-screen-md mx-auto">
           <div class="p-8 md:p-16 lg:p-20 xl:p-20 m-4">
             <div class="flex flex-col justify-center">
@@ -204,7 +211,10 @@
       <p class="text-green-dark">All Rights Reserved &#169; 2020 Century Next</p>
     </div>
 
+    <script src="https://unpkg.com/joshjs@1.0.0/dist/josh.min.js
+    "></script>
     <script>
+      const josh = new Josh();
       const menuInput = document.getElementById('responsive-menu');
       const navbar = document.getElementById('navbar');
       const mobileNavbar = document.getElementById('mobile-navbar');
