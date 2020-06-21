@@ -21,8 +21,8 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-image: url('../images/bg-md.gif');
-    background-size: cover;
+    background-image: url('../images/bg-md.jpg');
+    background-size: 768px;
   }
 }
 
