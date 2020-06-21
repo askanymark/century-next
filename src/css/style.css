@@ -8,12 +8,12 @@ html {
 
 body {
   color: theme('colors.green.default');
+  background-color: theme('colors.white');
   font-family: 'Raleway', sans-serif;
 }
 
 @media (min-width: 1024px) {
   body {
-    background-color: theme('colors.white');
     background-image: url('../images/background.jpg');
     background-size: cover;
   }
@@ -21,7 +21,6 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-color: theme('colors.white');
     background-image: url('../images/bg-md.gif');
     background-size: cover;
   }
@@ -29,9 +28,10 @@ body {
 
 @media (max-width: 375px) {
   body {
-    background-color: theme('colors.white');
     background-image: url('../images/bg-sm.gif');
-    background-size: cover;
+    background-size: auto;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
   }
 }
 
