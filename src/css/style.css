@@ -164,3 +164,9 @@ nav ul a {
 nav ul a:hover {
   text-decoration: underline;
 }
+
+#navbar {
+  position: fixed;
+  transition: top 0.3s;
+  width: 100%;
+}
