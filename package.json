@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "postcss-nested": "^4.2.1",
+    "smoothscroll-polyfill": "^0.4.4",
     "tailwindcss": "^1.4.6"
   }
 }
