@@ -132,6 +132,8 @@ nav input:checked ~ #overlay {
   top: 0;
   width: 100vw;
   z-index: -1;
+  transition: 0.5s;
+  overflow-y: hidden;
 }
 
 /* List */
