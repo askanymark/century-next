@@ -16,28 +16,29 @@
   </head>
   <body class="lg:mx-8 xl:mx-8">
     <nav>
-      <div id="navbar" class="flex bg-white flex-wrap justify-center lg:py-8 xl:py-8">
+      <div id="navbar" class="flex bg-white flex-wrap justify-center lg:py-8 xl:py-8 bg-opacity-75">
         <a
           class="text-center text-xl text-bold text-green-dark px-12 py-2 m-2 hover:text-green-lighter"
           href="#investment"
-          >Investment Activity</a
+          >INVESTMENT ACTIVITY</a
         >
         <a
           class="text-center text-xl text-bold text-green-dark px-12 py-2 m-2 hover:text-green-lighter"
           href="#investment"
-          >Production & Distribution</a
+          >PRODUCTION & DISTRIBUTION</a
         >
         <a
           class="text-center text-xl text-bold text-green-dark px-12 py-2 m-2 hover:text-green-lighter"
           href="#about"
-          >About Us</a
+          >ABOUT US</a
         >
         <a
+          id="home-link"
           class="text-center text-xl text-bold text-green-dark px-12 py-2 m-2 hover:text-green-lighter"
           href="#"
           onclick="toTop()"
         >
-          Home
+          HOME
         </a>
       </div>
       <div id="mobile-navbar" class="flex flex-col">
@@ -45,17 +46,17 @@
         <label for="responsive-menu"><span id="menu-icon"></span></label>
         <div id="overlay"></div>
         <ul class="justify-between">
-          <li>
-            <a class="menu-link md:text-4xl" href="#" onclick="toTop()">Home</a>
+          <li class="my-20">
+            <a class="menu-link md:text-4xl" href="#" onclick="toTop()">HOME</a>
           </li>
-          <li>
-            <a class="menu-link md:text-4xl" href="#investment">Investment</a>
+          <li class="my-20">
+            <a class="menu-link md:text-4xl" href="#investment">INVESTMENT ACTIVITY</a>
           </li>
-          <li>
-            <a class="menu-link md:text-4xl" href="#production">Production & Distribution</a>
+          <li class="my-20">
+            <a class="menu-link md:text-4xl" href="#production">PRODUCTION & DISTRIBUTION</a>
           </li>
-          <li>
-            <a class="menu-link md:text-4xl" href="#about">About Us</a>
+          <li class="my-20">
+            <a class="menu-link md:text-4xl" href="#about">ABOUT US</a>
           </li>
         </ul>
       </div>
@@ -146,7 +147,7 @@
             id="about"
             class="gap-4 bg-green-lighter bg-opacity-75 p-8 md:p-16 lg:p-20 xl:p-20 flex flex-col justify-center"
           >
-            <h2 class="text-4xl text-center mb-2 leading-normal">ABOUT US</h2>
+            <h2 class="text-4xl text-center mb-2">ABOUT US</h2>
             <img class="mb-8 mt-4" src="./images/Line_Horizontal_Green.svg" alt="" />
             <p class="text-gray-700 text-base text-center leading-normal">
               Our story goes back 30 years ago, where founding partners have engaged into petroleum

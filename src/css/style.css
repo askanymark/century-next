@@ -34,6 +34,14 @@ body {
   transform: rotate(90deg) scale(0.75, 1) translate(35%, 50%);
 }
 
+#home-link {
+  color: #46795f;
+}
+
+#home-link:hover {
+  color: #8da492;
+}
+
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -124,6 +132,7 @@ nav input[type='checkbox']:checked + label #menu-icon:after {
 /* Overlay */
 nav input:checked ~ #overlay {
   background: theme('colors.green.lighter');
+  opacity: 93%;
   bottom: 0;
   left: 0;
   height: 100vh;
