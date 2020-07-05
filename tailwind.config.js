@@ -1,7 +1,7 @@
 const base = 1.118;
 
 module.exports = {
-  purge: [],
+  purge: ['./src/*.html'],
   theme: {
     fontSize: {
       xs: `${base * 0.75}rem`,
