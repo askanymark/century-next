@@ -6,7 +6,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <link type="text/css" rel="stylesheet" href="./css/reset.css" />
     <link type="text/css" rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -14,8 +13,8 @@
     />
     <title>Century Next</title>
   </head>
-  <body class="lg:mx-8 xl:mx-8">
-    <nav>
+  <body>
+    <!-- <nav>
       <div id="navbar" class="flex bg-white flex-wrap justify-center lg:py-8 xl:py-8 bg-opacity-75">
         <a
           class="text-center text-xl text-bold text-green-dark px-12 py-2 m-2 hover:text-green-lighter"
@@ -41,26 +40,26 @@
           HOME
         </a>
       </div>
-      <div id="mobile-navbar" class="flex flex-col">
-        <input id="responsive-menu" type="checkbox" />
-        <label for="responsive-menu"><span id="menu-icon"></span></label>
-        <div id="overlay"></div>
-        <ul class="justify-between">
-          <li class="my-20">
-            <a class="menu-link md:text-4xl" href="#" onclick="toTop()">HOME</a>
-          </li>
-          <li class="my-20">
-            <a class="menu-link md:text-4xl" href="#investment">INVESTMENT ACTIVITY</a>
-          </li>
-          <li class="my-20">
-            <a class="menu-link md:text-4xl" href="#production">PRODUCTION & DISTRIBUTION</a>
-          </li>
-          <li class="my-20">
-            <a class="menu-link md:text-4xl" href="#about">ABOUT US</a>
-          </li>
-        </ul>
+    </nav> -->
+    <div id="menuArea">
+      <input type="checkbox" id="menuToggle" />
+
+      <label for="menuToggle" class="menuOpen">
+        <div class="open"></div>
+      </label>
+
+      <div class="menu menuEffects">
+        <label for="menuToggle"></label>
+        <div class="menuContent">
+          <ul>
+            <li><a href="#logo">HOME</a></li>
+            <li><a href="#investment">INVESTMENT ACTIVITY</a></li>
+            <li><a href="#investment">PRODUCTION & DISTRIBUTION</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+          </ul>
+        </div>
       </div>
-    </nav>
+    </div>
 
     <!-- Logo -->
     <div
@@ -227,37 +226,10 @@
     "></script>
     <script>
       const josh = new Josh();
-      const menuInput = document.getElementById('responsive-menu');
-      const navbar = document.getElementById('navbar');
-      const mobileNavbar = document.getElementById('mobile-navbar');
-      const navbarOriginalStyle = navbar.style;
-      const mobileNavbarOriginalStyle = mobileNavbar.style;
-
       function toTop() {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
       }
-
-      function resizeHandler() {
-        if (window.screen.width > 768) {
-          mobileNavbar.style = 'display: none;';
-          navbar.style = navbarOriginalStyle;
-        } else {
-          navbar.style = 'display: none;';
-          mobileNavbar.style = mobileNavbarOriginalStyle;
-        }
-      }
-
-      window.onresize = resizeHandler;
-
-      const links = document.querySelectorAll('.menu-link');
-      links.forEach((link) => {
-        link.onclick = () => {
-          menuInput.checked = false;
-        };
-      });
-
-      resizeHandler();
     </script>
     <script src="./js/main.js"></script>
   </body>
