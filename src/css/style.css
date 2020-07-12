@@ -133,7 +133,6 @@ nav input[type='checkbox']:checked + label #menu-icon:after {
 /* Overlay */
 nav input:checked ~ #overlay {
   background: theme('colors.green.lighter');
-  opacity: 93%;
   bottom: 0;
   left: 0;
   height: 100vh;
