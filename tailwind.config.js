@@ -3,6 +3,12 @@ const base = 1.118;
 module.exports = {
   purge: ['./src/*.html'],
   theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1024px',
+    },
     fontSize: {
       xs: `${base * 0.75}rem`,
       sm: `${base * 0.875}rem`,
@@ -20,8 +26,12 @@ module.exports = {
     extend: {
       colors: {
         white: '#f2f2f0',
-        gray: '#636f6f',
+        gray: {
+          lighter: '#b3b3b3',
+          default: '#636f6f',
+        },
         green: {
+          lightest: '#7b9e7b',
           lighter: '#8da492',
           default: '#1c3929',
           darker: '#475a4f',
