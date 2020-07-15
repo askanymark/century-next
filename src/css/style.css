@@ -12,8 +12,7 @@ body {
   background-color: theme('colors.white');
   font-family: 'Raleway', sans-serif;
   background-image: url('../images/bg.gif');
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 768px) {
