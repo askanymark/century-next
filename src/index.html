@@ -64,7 +64,7 @@
 
     <!-- Logo -->
     <div
-      class="container md:pl-20 mb-48 mt-32 lg:h-screen md:h-screen xl:h-screen max-w-screen lg:w-1/2 xl:w-1/2 md:w-9/12 sm:w-screen josh-js"
+      class="container md:pl-20 mt-32 lg:h-screen md:h-screen xl:h-screen max-w-screen lg:w-1/2 xl:w-1/2 md:w-9/12 sm:w-screen josh-js"
       data-josh-anim-name="fadeInUp"
     >
       <div class="flex flex-col">
@@ -83,34 +83,34 @@
       </div>
     </div>
 
-    <!-- Investment & prod -->
-    <div id="investment" class="lg:h-screen xl:h-screen lg:mx-8 xl:mx-8">
-      <div class="flex m-4 josh-js" data-josh-anim-name="fadeInUp">
-        <div class="lg:w-3/5 xl:3/5 sm:w-screen md:w-screen bg-green-dark bg-opacity-75 text-white">
-          <div class="p-8 md:p-16 lg:p-20 xl:p-20 flex flex-col justify-center">
-            <h2 class="text-4xl text-center mb-2 leading-normal">INVESTMENT ACTIVITY</h2>
-            <img class="mb-8 mt-4" src="./images/Line_Horizontal.svg" alt="" />
-            <p class="text-gray-700 text-center text-base leading-normal">
-              Century Next has been actively investing in the emerging market of Legal Cannabis -
-              the fastest growing consumer market in the USA, predominantly focusing on the early
-              stage of technology and related companies in the industry.
-            </p>
-          </div>
+    <!-- Investment -->
+    <div
+      id="investment"
+      class="josh-js my-4 mx-4 lg:mx-20 xl:mx-20 lg:w-1/2 xl:w-1/2"
+      data-josh-anim-name="fadeInUp"
+    >
+      <div class="bg-green-dark bg-opacity-75 text-white">
+        <div class="p-8 md:p-16 lg:p-20 xl:p-20 flex flex-col justify-center">
+          <h2 class="text-4xl text-center mb-2 leading-normal">INVESTMENT ACTIVITY</h2>
+          <img class="mb-8 mt-4" src="./images/Line_Horizontal.svg" alt="" />
+          <p class="text-gray-700 text-center text-base leading-normal">
+            Century Next has been actively investing in the emerging market of Legal Cannabis - the
+            fastest growing consumer market in the USA, predominantly focusing on the early stage of
+            technology and related companies in the industry.
+          </p>
         </div>
       </div>
+    </div>
 
-      <div class="lg:mt-4 xl:mt-4 lg:mx-20 xl:mx-20 josh-js" data-josh-anim-name="fadeInUp">
-        <div
-          class="flex flex-row content-end flex-wrap sm:flex-wrap md:flex-wrap lg:flex-no-wrap xl:flex-no-wrap"
-        >
+    <!-- Production -->
+    <div class="josh-js" data-josh-anim-name="fadeInUp">
+      <div class="flex flex-wrap lg:flex-no-wrap xl:flex-no-wrap lg:mx-20 xl:mx-20">
+        <div class="flex-1 lg:flex-none xl:flex-none mx-4 lg:ml-20 xl:ml-20 object-right-top">
+          <img class="w-full" src="./images/18860.jpg" alt="CBD" />
+        </div>
+        <div id="production" class="flex-initial m-4 lg:m-0 xl:m-0 lg:w-3/5 xl:3/5">
           <div
-            class="max-w-screen md:w-screen lg:w-1/4 xl:w-1/4 mx-4 lg:mx-0 xl:mx-0 mb-4 lg:mb-0 xl:mb-0"
-          >
-            <img class="w-full" src="./images/18860.jpg" alt="CBD" />
-          </div>
-          <div
-            id="production"
-            class="max-w-screen-lg bg-green-darker bg-opacity-75 text-white text-center leading-normal mx-4 lg:mx-0 xl:mx-0 mb-4 lg:mb-0 xl:mb-0 lg:ml-4 xl:ml-4 p-8 md:p-16 lg:p-20 xl:p-20 flex flex-col justify-center"
+            class="bg-green-darker bg-opacity-75 text-white text-center leading-normal p-8 md:p-16 lg:p-20 xl:p-20 flex flex-col justify-center"
           >
             <h2 class="text-4xl text-center mb-2">
               PRODUCTION AND DISTRIBUTION
@@ -126,7 +126,7 @@
               <button
                 class="rounded-full border border-white py-2 px-4 hover:bg-white hover:text-green"
               >
-                <a href=""> NALO Website</a>
+                <a href="#"> NALO Website</a>
               </button>
             </div>
             <p class="text-gray-700 text-base">
@@ -140,58 +140,56 @@
     </div>
 
     <!-- About -->
-    <div>
-      <div class="josh-js" data-josh-anim-name="fadeInUp">
-        <div class="max-w-screen-md mx-4 lg:mx-0 xl:mx-0 lg:mt-48 xl:mt-48 lg:ml-48 xl:ml-48">
-          <div
-            id="about"
-            class="gap-4 bg-green-lighter bg-opacity-75 p-8 md:p-16 lg:p-20 xl:p-20 flex flex-col justify-center"
-          >
-            <h2 class="text-4xl text-center mb-2">ABOUT US</h2>
+    <div class="josh-js" data-josh-anim-name="fadeInUp">
+      <div class="max-w-screen-md mx-4 lg:mx-0 xl:mx-0 lg:mt-48 xl:mt-48 lg:ml-48 xl:ml-48">
+        <div
+          id="about"
+          class="gap-4 bg-green-lighter bg-opacity-75 p-8 md:p-16 lg:p-20 xl:p-20 flex flex-col justify-center"
+        >
+          <h2 class="text-4xl text-center mb-2">ABOUT US</h2>
+          <img class="mb-8 mt-4" src="./images/Line_Horizontal_Green.svg" alt="" />
+          <p class="text-gray-700 text-base text-center leading-normal">
+            Our story goes back 30 years ago, where founding partners have engaged into petroleum
+            products trading activity, and have eventually established themselves as one of the
+            largest physical traders in the Baltics region, while also diversifying the business
+            activity by involvement in the financial markets. Over time the partners' focus has
+            shifted to private equity and venture capital, which has lead to formation of the
+            Century Next holding.
+          </p>
+
+          <p class="text-gray-700 text-base text-center mt-6 leading-normal">
+            Over the long history of operations the management has established strong personal
+            relations with numerous international partners, including first class banks, brokerage
+            firms, trading companies and others, and now aims to use gained experience and expertise
+            in the private equity, and venture capital markets. Our highly flexible and
+            knowledgeable team takes a pro-active investment approach with a view to achieve maximum
+            results. We hope to establish strong long term relations and are always ready for the
+            next opportunity which may arise.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="josh-js" data-josh-anim-name="fadeInUp">
+      <div class="container max-w-screen-md mx-auto mt-24">
+        <div class="px-8 md:px-8 lg:px-8 xl:px-8 m-4">
+          <div class="flex flex-col justify-center">
+            <h2 class="text-4xl mb-2 text-center">CONTACT US</h2>
             <img class="mb-8 mt-4" src="./images/Line_Horizontal_Green.svg" alt="" />
             <p class="text-gray-700 text-base text-center leading-normal">
-              Our story goes back 30 years ago, where founding partners have engaged into petroleum
-              products trading activity, and have eventually established themselves as one of the
-              largest physical traders in the Baltics region, while also diversifying the business
-              activity by involvement in the financial markets. Over time the partners' focus has
-              shifted to private equity and venture capital, which has lead to formation of the
-              Century Next holding.
-            </p>
-
-            <p class="text-gray-700 text-base text-center mt-6 leading-normal">
-              Over the long history of operations the management has established strong personal
-              relations with numerous international partners, including first class banks, brokerage
-              firms, trading companies and others, and now aims to use gained experience and
-              expertise in the private equity, and venture capital markets. Our highly flexible and
-              knowledgeable team takes a pro-active investment approach with a view to achieve
-              maximum results. We hope to establish strong long term relations and are always ready
-              for the next opportunity which may arise.
+              Whether you are at concept phase or have a full-blown business plan, we are here to
+              hear about your project.
             </p>
           </div>
         </div>
-      </div>
-
-      <!-- Contact -->
-      <div class="clear-both josh-js" data-josh-anim-name="fadeInUp">
-        <div class="container max-w-screen-md mx-auto mt-24">
-          <div class="px-8 md:px-8 lg:px-8 xl:px-8 m-4">
-            <div class="flex flex-col justify-center">
-              <h2 class="text-4xl mb-2 text-center">CONTACT US</h2>
-              <img class="mb-8 mt-4" src="./images/Line_Horizontal_Green.svg" alt="" />
-              <p class="text-gray-700 text-base text-center leading-normal">
-                Whether you are at concept phase or have a full-blown business plan, we are here to
-                hear about your project.
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-col m-4 p-4">
-            <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row justify-around">
-              <div class="max-w-xs">
-                <div class="flex flex-col">
-                  <img src="./images/Path_6.svg" alt="E-mail" />
-                  <div class="mt-4">
-                    <div class="font-bold text-lg text-center">email@email.com</div>
-                  </div>
+        <div class="flex flex-col m-4 p-4">
+          <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row justify-around">
+            <div class="max-w-xs">
+              <div class="flex flex-col">
+                <img src="./images/Path_6.svg" alt="E-mail" />
+                <div class="mt-4">
+                  <div class="font-bold text-lg text-center">email@email.com</div>
                 </div>
               </div>
             </div>
