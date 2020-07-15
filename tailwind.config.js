@@ -17,7 +17,7 @@ module.exports = {
       lg: `${base * 1.125}rem`,
       xl: `${base * 1.25}rem`,
       '2xl': `${base * 1.5}rem`,
-      '3xl': `${base * 1.875}rem`,
+      '3xl': `${base * 1.725}rem`,
       '4xl': `${base * 2.25}rem`,
       '5xl': `${base * 3}rem`,
       '6xl': `${base * 4}rem`,

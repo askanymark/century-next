@@ -11,23 +11,26 @@ body {
   color: theme('colors.green.dark');
   background-color: theme('colors.white');
   font-family: 'Raleway', sans-serif;
-  background-image: url('../images/bg-lg.gif');
-  background-size: auto;
+  background-image: url('../images/bg.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
   body {
     background-image: url('../images/bg-md.jpg');
-    background-size: auto;
+    background-size: contain;
     background-position: 0 15%;
+    background-repeat: repeat;
   }
 }
 
 @media (max-width: 375px) {
   body {
     background-image: url('../images/bg-sm.jpg');
-    background-size: auto;
+    background-size: contain;
     background-position: 0 15%;
+    background-repeat: repeat;
   }
 }
 
