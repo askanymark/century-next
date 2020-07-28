@@ -26,10 +26,9 @@ body {
 
 @media (max-width: 375px) {
   body {
-    background-image: url('../images/bg-sm.jpg');
-    background-size: contain;
-    background-position: 0 15%;
-    background-repeat: repeat;
+    background-image: url('../images/app.bg.gif');
+    background-position: top;
+    background-repeat: no-repeat;
   }
 }
 
