@@ -21,6 +21,16 @@ body {
     background-position: top;
     background-repeat: no-repeat;
   }
+
+  #cbd {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1243px) {
+  #cbd {
+    width: 375px;
+  }
 }
 
 @media (max-width: 375px) {
